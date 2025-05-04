@@ -1,0 +1,869 @@
+body {
+    margin: 0px;
+    background-image: url(sfondo.png);
+}
+
+nav {
+    background-color: #282828;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+
+section {
+    background-color: #1A1A1A;
+    height: 1500px;
+    margin: 200px 150px 0px;
+}
+
+footer {
+    background-color: #1A1A1A;
+    height: 400px;
+    margin: 0px 150px;
+}
+
+#flex-containerlogo {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+#flex-containericone {
+    height: 50px;
+    width: 650px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#flex-containericona {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+#flex-containericona2 {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+#flex-contaiermenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-lines {
+    height: 2px;
+    width: 15px;
+    background-color: red;
+    margin: 3px;
+}
+
+.itemicona {
+    font-family: Helvetica;
+    color: white;
+}
+
+.itemiconasearch {
+    font-family: Helvetica;
+    color: white;
+}
+
+.itemiconalogin {
+    font-family: Helvetica;
+    color: white;
+}
+
+#flex-containericona:hover {
+    background-color: red;
+}
+
+#search {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    justify-content: right;
+    z-index: 4;
+}
+
+#search.hidden {
+    display: none;
+}
+
+#flex-containersearch {
+    background-color: #F8444F;
+    width: 55%;
+    height: 50px;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+}
+
+#flex-containersearch input {
+    background-color: #F8444F;
+    color: white;
+    width: 90%;
+    height: 95%;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+}
+
+#flex-containersearch input::placeholder {
+    color: pink;
+    font-weight: 800;
+}
+
+.flex-itemsearchsend {
+    padding-top: 15px;
+}
+
+.flex-itemsearchclose {
+    padding-top: 5px;
+}
+
+#login {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login.hidden {
+    display: none;
+}
+
+#flex-containerlogin {
+    background-color: #181818;
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-itemlogincontorno1 {
+    border: 2px solid #F8444F;
+}
+
+#flex-containercloselogin {
+    display: flex;
+    justify-content: right;
+}
+
+.flex-itemcloselogin {
+    height: 20px;
+    width: 25px;
+    background-color: #F8444F;
+}
+
+.flex-itemlogintitle {
+    color: #F8444F;
+    width: 100%;
+    height: 15%;
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 3px;
+}
+
+.flex-itemlogincontorno2 {
+    border-bottom: 1px solid gray;
+}
+
+.flex-itemloginscelta {
+    width: 100%;
+    height: 10%;
+    color: white;
+    text-align: center;
+    font-family: Helvetica;
+    padding-top: 20px;
+}
+
+#flex-containerloginsocialnetwork {
+    width: 95%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 5px 9px;
+}
+
+.flex-itemloginfacebookandgoogle {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.flex-itemloginemailandpassword {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+input {
+    background-color: #323232;
+    width: 88%;
+    height: 70%;
+    color: white;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+.flex-itemloginsendbutton {
+    width: 90%;
+    height: 15%;
+    background-color: #F8444F;
+    color: white;
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 5px 5px 15px;
+}
+
+.flex-itemloginsendbutton button {
+    width: 100%;
+    height: 100%;
+}
+
+#flex-containerloginother {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.flex-itemloginforgetpasswordandregister {
+    color: red;
+    font-family: Helvetica;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+#flex-containerarticoli {
+    display: flex;
+    flex-wrap: wrap;
+    height: 900px;
+}
+
+#flex-containerarticolo {
+    background-color: black;
+    color: white;
+    font-family: Oswald;
+    width: 33.3%;
+    height: 300px;
+    font-size: 90%;
+}
+
+.flex-itemarticolothumbnail {
+    height: 80%;
+    position: relative;
+}
+
+.flex-itemarticoloimmagine {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+}
+
+.favoriteicon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: right;
+    width: 100%;
+}
+
+.flex-itemarticolotesto {
+    background-color: black;
+    color: white;
+    font-family: Oswald;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+#flex-containernotizie {
+    display: flex;
+    width: 33.3%;
+    height: 600px;
+    flex-direction: column;
+}
+
+#flex-containernotizia {
+    display: flex;
+    width: 100%;
+    height: 98px;
+}
+
+.flex-itemnotiziaimmagine {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.flex-itemnotiziatesto {
+    width: 60%;
+    color: white;
+    font-size: 70%;
+    font-family: Helvetica;
+}
+
+.flex-itemcontorno {
+    border: 1px solid gray;
+}
+
+.flex-itemgiochiattesititolo {
+    height: 25px;
+    font-family: Helvetica;
+    color: red;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+#flex-containergiochiattesi {
+    display: flex;
+    width: 33.3%;
+    height: 600px;
+    flex-direction: column;
+}
+
+.flex-itemgiochiattesi1 {
+    background-image: url(gioco1.png);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 115px;
+    z-index: 2;
+}
+
+.flex-itemgiochiattesi2 {
+    background-image: url(gioco2.png);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 115px;
+    z-index: 2;
+}
+
+.flex-itemgiochiattesi3 {
+    background-image: url(gioco3.png);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 115px;
+    z-index: 2;
+}
+
+.flex-itemgiochiattesi4 {
+    background-image: url(gioco4.png);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 115px;
+    z-index: 2;
+}
+
+.flex-itemgiochiattesi5 {
+    background-image: url(gioco5.png);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 115px;
+    z-index: 2;
+}
+
+.flex-itemgiochiattesi1 strong {
+    color: white;
+    font-family: Helvetica;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.flex-itemgiochiattesi2 strong {
+    color: white;
+    font-family: Helvetica;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.flex-itemgiochiattesi3 strong {
+    color: white;
+    font-family: Helvetica;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.flex-itemgiochiattesi4 strong {
+    color: white;
+    font-family: Helvetica;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.flex-itemgiochiattesi5 strong {
+    color: white;
+    font-family: Helvetica;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+strong em {
+    color: red;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#flex-containerrecensioniesegnalaproblemi {
+    display: flex;
+    width: 33.3%;
+    height: 600px;
+    flex-direction: column;
+}
+
+#flex-containerrecensioni {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    flex-direction: column;
+}
+
+.flex-itemrecensioni {
+    font-family: Helvetica;
+    font-size: 100%;
+    color: red;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+
+#flex-containerrecensionitesto {
+    display: flex;
+    width: 100%;
+    height: 16.6%;
+}
+
+.flex-itemrecensionitesto {
+    width: 80%;
+    font-size: 95%;
+    font-family: Helvetica;
+    color: white;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+
+.flex-itemvoto {
+    width: 20%;
+    font-family: Helvetica;
+    color: red;
+    font-size: 200%;
+    padding-top: 17px;
+    padding-left: 15px;
+}
+
+#flex-containersegnalaproblema {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+}
+
+.flex-itemsegnalaproblema {
+    width: 90%;
+    height: 20%;
+    font-family: Helvetica;
+    color: red;
+    font-size: 80%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.flex-itemsegnalaproblema em {
+    color: gray;
+}
+
+.flex-itemscriviproblema {
+    width: 95%;
+    height: 50%;
+    margin: 1px 5px 5px 10px;
+}
+
+textarea {
+    background-color: #323232;
+    color: white;
+    font-family: Helvetica;
+    width: 98%;
+    height: 95%;
+    outline: none;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+textarea::placeholder {
+    color: gray;
+    font-family: Helvetica;
+}
+
+.flex-iteminviaproblema {
+    width: 95%;
+    height: 20%;
+    text-align: center;
+    margin: 10px 5px 5px 10px;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    color: white;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+#flex-containerinformazioni {
+    display: flex;
+    height: 400px;
+}
+
+.flex-itemloghi {
+    width: 60%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.flex-itemdescrizione {
+    color: white;
+    font-family: Helvetica;
+    width: 100%;
+}
+
+.flex-itemcontorno2 {
+    border: 1px solid red;
+}
+
+#api-view {
+    background-color: #1A1A1A;
+    height: 2300px;
+    margin: 200px 150px 0px;
+    color: white;
+    font-family: Helvetica;
+}
+
+.api-title {
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+#giochi-animeapi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#giochi-animeID {
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding-left: 10px;
+    padding-top: 5px;
+    justify-content: space-between;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+#tabellaID {
+    display: flex;
+    justify-content: space-between;
+}
+
+.separatoreID {
+    border: 1px solid gray;
+}
+
+.searchID {
+    padding-top: 5px;
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+#gamesform input {
+    width: auto;
+    height: auto;
+    outline: none;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#animeform input {
+    width: auto;
+    height: auto;
+    outline: none;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#animeform input {
+    width: auto;
+    height: auto;
+    outline: none;
+}
+
+#games-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#games-view .game {
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border: 1px solid slategray;
+    padding: 5px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#games-view img {
+    width: 150px;
+    height: 100px;
+}
+
+#games-view span {
+    color: white;
+    padding-top: 10px;
+}
+
+#anime-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#anime-view .anime {
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border: 1px solid slategray;
+    padding: 5px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#anime-view img {
+    width: 150px;
+    height: 200px;
+}
+
+#anime-view span {
+    color: white;
+    padding-top: 10px;
+}
+
+.itemicona a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    nav {
+        top: 0px;
+    }
+
+    section {
+        height: 3500px;
+        margin: 0px 0px 0px;
+    }
+
+    footer {
+        height: 400px;
+        margin: 0px 0px 0px;
+    }
+
+    #flex-containericona {
+        display: none;
+    }
+
+    #flex-containerarticoli {
+        margin-top: 50px;
+    }
+
+    #flex-containerarticolo {
+        width: 100%;
+    }
+
+    .flex-itemarticolotesto {
+        padding-left: 10px;
+    }
+
+    #flex-containergiochiattesi {
+        display: none;
+    }
+
+    #flex-containerrecensioni {
+        display: none;
+    }
+
+    #flex-containersegnalaproblema {
+        display: none;
+    }
+
+    #flex-containernotizie {
+        width: 100%;
+    }
+
+    #flex-containernotizia {
+        width: 100%;
+    }
+
+    #flex-containerinformazioni {
+        display: inline-block;
+        height: 400px;
+    }
+
+    .flex-itemloghi {
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .flex-itemdescrizione {
+        font-size: 70%;
+        text-align: center;
+    }
+
+    #api-view {
+        width: 100%;
+        height: 3000px;
+        margin: 30px 0px 0px;
+    }
+
+    .api-title {
+        padding-top: 15px;
+        padding-left: 5px;
+    }
+
+    #giochi-animeID {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 30%;
+    }
+
+    #tabellaID {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .searchID {
+        padding-top: 5px;
+        padding-left: 5px;
+        font-size: 25px;
+    }
+
+    form input {
+        width: auto;
+        height: auto;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    #games-view {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #games-view .game {
+        margin: 10px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        border: 1px solid slategray;
+        padding: 5px;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #games-view img {
+        width: 100%;
+        height: 40%;
+    }
+
+    #games-view span {
+        color: white;
+        padding-top: 10px;
+    }
+
+    #anime-view {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #anime-view .anime {
+        margin: 10px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        border: 1px solid slategray;
+        padding: 5px;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #anime-view img {
+        width: 100%;
+        height: 40%;
+    }
+
+    #anime-view span {
+        color: white;
+        padding-top: 10px;
+    }
+}
